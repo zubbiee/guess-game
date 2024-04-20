@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.con {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 3rem;
+}
+h1 {
+  font-size: 5rem;
+}
+.con p {
+  font-size: 3rem;
+}
+.con input {
+  width: 30%;
+  height: 5%;
+  outline: none;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+.con button {
+  background-color: grey;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+.celebrate {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: #ffd700;
+  animation: celebration 2s infinite;
+}
+
+@keyframes celebration {
+  0%,
+  100% {
+    transform: scale(1);
+    color: #ffd700;
+  }
+  50% {
+    transform: scale(1.5);
+    color: #dc143c;
+  }
+}
+.sad {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  animation: sadness 4s ease-in-out forwards;
+}
+
+@keyframes sadness {
+  0% {
+    transform: translateY(0);
+    color: #fff;
+  }
+  100% {
+    transform: translateY(50px);
+    color: #708090; /* A grey color */
+    opacity: 0.5;
+  }
+}
